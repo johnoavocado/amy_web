@@ -310,7 +310,8 @@ h5 {
     }
 	
 .contactinfo {
-	line-height: 0em;
+    font-size:1.3em;
+	line-height: 1.3em;
 	text-align: left;
 	}
 
@@ -324,7 +325,11 @@ h6 {
 padding:-80px,0,0,0;
 line-height:1.5em; }
 
+.about_me {
+    font-size:1.3em;
+    line-height: 1.3em;
 
+}
 				
 /*--------------------------------------------FOOTER--------------------------------------------*/
 
