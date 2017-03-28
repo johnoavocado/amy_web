@@ -307,6 +307,7 @@ h5 {
 	color:#000;
 	font-family:"Inconsolata", "PT mono", monospace; font-weight: 700; font-style:normal;
 	color:#0000ff;
+	margin-bottom: -0.1cm;
     }
 	
 .contactinfo {
@@ -328,7 +329,7 @@ line-height:1.5em; }
 .about_me {
     font-size:1.3em;
     line-height: 1.3em;
-
+    margin-top: 0.15cm;
 }
 				
 /*--------------------------------------------FOOTER--------------------------------------------*/
