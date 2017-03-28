@@ -1,0 +1,403 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* ---------------------------------------------------------------- elements */
+/* ========================================================================== */	
+
+ol, ul {
+	list-style:none;
+	}
+
+body {
+	font-size: 100.01%; /* prevent extreme font resizing in IE */
+	text-align:left;
+	background-color:#f6f6f6;
+	margin-left:21px; 
+	font-family:"Inconsolata", "PT mono", monospace; font-weight:normal; font-style:normal;
+	}
+
+/* ---------------------MAIN TYPOGRAPHIC ELEMENTS ------------------ */
+/*----THIS REFERS TO TITLE ON HOME PAGE-------------*/
+
+h1 {
+	font-size:1.3em;
+	line-height:.4em;
+	margin: 23.5px 0 0 0;
+	font-family:"Inconsolata", "PT mono", monospace; font-weight:700; font-style:normal;
+	}
+	
+/*----THIS REFERS TO SUBTITLE ON HOME PAGE-------------*/
+	
+.subtitles_home {
+	font-size:1em;
+	line-height:.9px
+	font-family:"Inconsolata", "PT mono", monospace; font-weight:400; font-style:normal;
+	color:#000;
+	}
+	
+/*----THIS REFERS TO TITLE ON PROJECT PAGE-------------*/
+
+h2 {
+	font-size:1em;
+	color:#000;
+	margin:9px 0 6px 0;
+	font-family:"Inconsolata", "PT mono", monospace; font-weight: 700; font-style:normal;
+	color:#0000ff;
+    }
+	
+/*----THIS REFERS TO SUBTITLE ON PROJECT PAGE-------------*/
+
+h3 {
+	font-size:0.65em;
+	color:#000;
+	font-family:"Inconsolata", "PT mono", monospace; font-weight:normal; font-style:normal;
+	padding:0 0 20px 0;
+    }
+
+.rollover_text{
+	position:absolute;
+	z-index:-1;
+	left:0px;
+	top:0px;
+	color:#0000ff;
+	font-family:"Inconsolata", "PT mono", monospace; 
+	font-weight:normal; font-style:normal; font-size:0.7em;
+	}	
+	
+.info_rollover_text{
+	position:absolute;
+	z-index:-1;
+	left:0px;
+	top:20px;
+	color:#0000ff;
+	font-family:"Inconsolata", "PT mono", monospace; 
+	font-weight:normal; font-style:normal; font-size:0.7em;
+	}	
+	
+/*------------CONTAINER-------------*/
+
+#container {
+	width:1024px;
+	margin-right:auto;
+	margin-left:auto;
+	overflow:auto;
+	}
+			
+/*---------------HEADER-------------*/
+			
+#header {
+	z-index:2;
+	width:960px;
+	height:94px;
+	position:fixed;
+	top:15px;
+	margin:0 0 0 32px;
+	}
+		
+#logo {
+	float:left;
+	width:82px;
+	height:94px;
+	background:transparent url(../../images/logo.png) no-repeat;
+	text-indent:-99999px;
+	}
+		
+/*------------------------------------------------NAVIGATION--------------------------------------------------------------*/
+
+.navtext {
+	font-size: 1.1em;
+	text-decoration:none;
+	color:#0000ff;
+    }
+
+.navtext:hover {
+	text-decoration:underline;
+ 	color:#0000ff;
+   	}
+		
+#navigation {
+	z-index:auto;
+	float:right;
+	margin: 10px 37px 0 0;
+    }
+		
+.navlist li {
+	padding:0 0 0 10px;
+	display: inline;
+	}
+		
+			
+/*-------------------------------------------HOME PAGE CONTENT--------------------------------------*/
+
+#content {
+	width:900px;
+	margin:170px 32px 52px 105px;
+	overflow:auto;
+	}	
+	
+/*-----LIST OF IMAGES IMAGES IN HOME PAGE-----*/
+
+#content li {
+	padding:0 0 21px 0;
+	}
+	
+.col_element{
+	width: 256px;
+	}
+
+/*-----HOME PAGE ROLLOVER IMAGES-----*/
+
+/* This is the div class that crops the image.
+Also used by the hover_area div's. Needs to be as big as image was. */
+
+.small_pic {
+	position:relative;
+	width:256px;
+	height:182px;
+	overflow:hidden;
+	}
+
+.large_pic {
+	position:relative;
+	width:256px;
+	height:389px;
+	overflow:hidden;
+	}
+
+.bw_image{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	}	
+
+.colour_image{
+	opacity: 0;
+	z-index: 1;
+	left: 0px;
+	top: 0px;
+	}	
+		
+/*------------LEFT COLUMN HOME PAGE--------*/
+			
+#leftcol {
+	float:left;
+	width:256px;
+	margin:0 21px 0 auto;
+	}
+
+/*----------MIDDLE COLUMN HOME PAGE--------*/
+			
+#midcol {
+	float:left;
+	width:256px;
+	padding:0 21px 0 0;
+	}
+
+/*---------RIGHT COLUMN HOME PAGE----------*/
+			
+#rightcol {
+	float:left;
+	width:256px;
+	}	
+
+/*------------------------------------------PROJECT PAGE CONTENT----------------------------------*/	
+/*----------FIRST IMAGE IN PROJ PAGE--*/
+
+.image1 {
+	padding:0 32px 0 auto;
+	}
+	
+/*----IMAGES THAT COME AFTER INFO IN PROJ PAGE----*/	
+	
+.otherimages {
+	padding: 0 0 0 auto;
+	float:left;
+	overflow:auto;
+	display:inline;
+	}
+			 
+.otherimages li{
+	padding:0 20px 21px 0;
+	}
+	
+.lefty {
+	position:absolute;
+	float:left;
+	}	
+	
+.righty {
+	position:relative;
+	float:right;
+	}
+
+/*----------INFORMATIONAL TEXT---------------*/	
+
+.title {
+	width:256px;
+	float:left;
+	padding:0 0 0 40px;
+	}
+	  
+.subtitle {
+	width:256px;
+	padding:0 0 0 40px;
+	}
+
+.project_info_text li {
+	display:inline;
+	line-height: 14.5px;
+	font-size:.8em;
+	}
+
+/*--------INFORMATION PARAGRAPH ONE---*/	
+
+.information {
+	float: left;
+	width:256px;
+	padding: 0 0 0 auto;
+	margin: 0 21px 0 0;
+	}
+
+/*--------INFORMATION PARAGRAPH TWO---*/	
+
+.information2 {
+	width:537px;
+	float: left;
+	margin: 0 0 0 0;
+	}
+
+/*-------------------------------------------INFO PAGE CONTENT-------------------------------------*/
+
+/*---------LEFT COLUMN INFO PAGE----------*/
+
+#info_left_col{
+    opacity: 0;
+	float: left;
+	width: 395px;
+}
+
+.info_left_pic{
+	opacity: 0;
+	position:relative;
+	width:395px;
+	height:550px;
+	overflow:hidden;
+}
+		
+/*---------RIGHT COLUMN INFO PAGE----------*/
+	
+#info_right_col{
+	float: left;
+	width: 395px;
+	margin: 0 20px 0 21px;
+}	
+		
+.info_right_pic{
+	position:relative;
+	width:395px;
+	height:265px;
+	overflow:hidden;
+}
+
+/*---------TYPOGRAPHY ON INFO PAGE----------*/
+
+h5 {
+	line-height:0em;
+	font-size:2em;
+	color:#000;
+	font-family:"Inconsolata", "PT mono", monospace; font-weight: 700; font-style:normal;
+	color:#0000ff;
+    }
+	
+.contactinfo {
+	line-height: 0em;
+	text-align: left;
+	}
+
+h6 {
+	font-size:1.3em;
+	line-height:1.5em;
+	font-family:"Inconsolata", "PT mono", monospace; font-weight:400; font-style:normal;
+	}
+	
+.awardtext {	
+padding:-80px,0,0,0;
+line-height:1.5em; }
+
+
+				
+/*--------------------------------------------FOOTER--------------------------------------------*/
+
+#footer {
+	width:960px;
+	height:40px;
+	margin:0 32px 70px 32px;
+	}	
+			
+.linktotop li {
+	padding:0 0 0 32px;
+	float:left;
+	}
+			   
+.footerlist li {
+	float:left;
+	display:inline;
+    }
+
+/*--------PREVIOUS PAGE BUTTON---*/	
+
+#firstcol {
+	float:left;
+	width:14px;
+	padding: 15px 0 0 258px;
+	}
+	
+/*--------ALL PROJECTS BUTTON---*/	
+
+#secondcol {
+	float:left;
+	width:77px;
+	padding: 13px 0 0 144px;
+	} 
+	
+/*--------NEXT PAGE BUTTON---*/	
+
+#thirdcol {
+	float:left;
+	width:14px;
+	padding: 15px 0 0 144px;
+
+	}
+			 
+/*------Back to all projects button
+		At the bottom of the page in the template
+		Gave it's own class to change the colour 
+		and decoration on mouse hover. -------*/
+			   
+.backtoproj {
+	font-size:.8em;
+	text-decoration:none;
+	color:#0000ff;
+	}
+		
+.backtoproj:hover {
+	text-decoration:underline;
+ 	color:#0000ff;
+   	}
+
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
